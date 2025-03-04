@@ -3,17 +3,14 @@ package me.angeschossen.upgradeablespawners.api.role;
 import org.bukkit.plugin.Plugin;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Used for restricting editing spawners.
  */
-public class ManagementFlag extends com.github.angeschossen.pluginframework.api.flags.roles.ManagementFlag {
+public class ActionFlag extends com.github.angeschossen.pluginframework.api.flags.roles.ActionFlag {
 
     public final boolean regionMembers;
 
-    public ManagementFlag(@NotNull Plugin plugin, @NotNull String name, boolean regionMembers) {
+    public ActionFlag(@NotNull Plugin plugin, @NotNull String name, boolean regionMembers) {
         super(plugin, name);
         this.regionMembers = regionMembers;
     }

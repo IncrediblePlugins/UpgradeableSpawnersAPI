@@ -4,7 +4,7 @@ description = "UpgradeableSpawnersAPI"
 
 plugins {
     `java-library`
-    id("com.github.johnrengelman.shadow").version("7.1.2")
+    id("io.github.goooler.shadow").version("8.1.8")
     `maven-publish`
 }
 
@@ -42,7 +42,7 @@ tasks.withType<JavaCompile> {
 }
 
 java {
-    toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+    toolchain.languageVersion.set(JavaLanguageVersion.of(21))
 }
 
 tasks {
@@ -63,7 +63,7 @@ tasks {
 }
 
 dependencies {
-    shadow("com.github.Angeschossen:PluginFrameworkAPI:1.0.26")
+    shadow("com.github.Angeschossen:PluginFrameworkAPI:1.1.7")
     compileOnly("org.spigotmc:spigot-api:1.21.1-R0.1-SNAPSHOT")
     compileOnly("org.realityforge.org.jetbrains.annotations:org.jetbrains.annotations:1.7.0")
 }
