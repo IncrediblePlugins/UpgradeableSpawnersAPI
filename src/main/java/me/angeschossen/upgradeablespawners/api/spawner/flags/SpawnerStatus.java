@@ -49,7 +49,11 @@ public enum SpawnerStatus {
     /**
      * Spawner is paused, because butcher mode is configured to require an upgradeable hopper placed below it.
      */
-    PAUSED_BUTCHER_HOPPER_MISSING(false);
+    PAUSED_BUTCHER_HOPPER_MISSING(false),
+    /**
+     * Spawner is paused, because no player is near. Depends on {@link UpgradeType#PLAYER_RANGE}
+     */
+    PAUSED_PLAYER_RANGE(false);
 
     public final boolean holoUpd;
 
